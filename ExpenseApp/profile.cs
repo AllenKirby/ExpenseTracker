@@ -91,12 +91,12 @@ namespace ExpenseApp
                     string location = timeLocation[1];
 
                     Guna2Panel pnl = new Guna2Panel();
-                    pnl.Size = new Size(465, 100);
+                    pnl.Size = new Size(448, 100);
                     pnl.BorderRadius = 15;
                     pnl.FillColor = Color.FromArgb(83, 123, 47);
 
                     Label lblTime = new Label();
-                    lblTime.Font = new Font("Poppins", 9.75f, FontStyle.Regular);
+                    lblTime.Font = new Font("Poppins", 12f, FontStyle.Regular);
                     lblTime.Size = new Size(131, 23);
                     lblTime.Location = new Point(38, 19);
                     lblTime.BackColor = Color.Transparent;
@@ -104,7 +104,7 @@ namespace ExpenseApp
                     lblTime.Text = time;
 
                     Label lblLocation = new Label();
-                    lblLocation.Font = new Font("Poppins", 9.75f, FontStyle.Regular);
+                    lblLocation.Font = new Font("Poppins", 12f, FontStyle.Regular);
                     lblLocation.Size = new Size(380, 23);
                     lblLocation.Location = new Point(38, 46);
                     lblLocation.BackColor = Color.Transparent;

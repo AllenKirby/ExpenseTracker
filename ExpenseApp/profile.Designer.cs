@@ -32,9 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(profile));
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnEdit = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnEdit = new Guna.UI2.WinForms.Guna2Button();
             this.pbProfilepic = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.lblFullname = new System.Windows.Forms.Label();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
@@ -55,13 +54,12 @@
             this.lblUsername = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.flpLogs = new System.Windows.Forms.FlowLayoutPanel();
-            this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.guna2Panel1.SuspendLayout();
+            this.panelTitle = new Guna.UI2.WinForms.Guna2Panel();
+            this.label7 = new System.Windows.Forms.Label();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbProfilepic)).BeginInit();
             this.guna2Panel4.SuspendLayout();
@@ -74,10 +72,10 @@
             this.guna2ShadowPanel1.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.guna2Panel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.flpLogs.SuspendLayout();
-            this.guna2Panel7.SuspendLayout();
+            this.panelTitle.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -97,17 +95,19 @@
             this.guna2Elipse1.BorderRadius = 10;
             this.guna2Elipse1.TargetControl = this.guna2Panel2;
             // 
-            // guna2Panel1
+            // guna2Panel2
             // 
-            this.guna2Panel1.BorderRadius = 10;
-            this.guna2Panel1.Controls.Add(this.panel1);
-            this.guna2Panel1.Controls.Add(this.guna2Panel2);
-            this.guna2Panel1.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2Panel1.Location = new System.Drawing.Point(27, 47);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1060, 510);
-            this.guna2Panel1.TabIndex = 17;
+            this.guna2Panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Panel2.BackgroundImage")));
+            this.guna2Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Panel2.Controls.Add(this.btnEdit);
+            this.guna2Panel2.Controls.Add(this.pbProfilepic);
+            this.guna2Panel2.Controls.Add(this.lblFullname);
+            this.guna2Panel2.Controls.Add(this.guna2Panel4);
+            this.guna2Panel2.Location = new System.Drawing.Point(16, 14);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.Size = new System.Drawing.Size(492, 494);
+            this.guna2Panel2.TabIndex = 19;
             // 
             // btnEdit
             // 
@@ -130,20 +130,6 @@
             this.btnEdit.Size = new System.Drawing.Size(60, 45);
             this.btnEdit.TabIndex = 21;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Panel2.BackgroundImage")));
-            this.guna2Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.guna2Panel2.Controls.Add(this.btnEdit);
-            this.guna2Panel2.Controls.Add(this.pbProfilepic);
-            this.guna2Panel2.Controls.Add(this.lblFullname);
-            this.guna2Panel2.Controls.Add(this.guna2Panel4);
-            this.guna2Panel2.Location = new System.Drawing.Point(16, 14);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(492, 494);
-            this.guna2Panel2.TabIndex = 19;
             // 
             // pbProfilepic
             // 
@@ -398,6 +384,19 @@
             this.pictureBox2.TabIndex = 21;
             this.pictureBox2.TabStop = false;
             // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BorderRadius = 10;
+            this.guna2Panel1.Controls.Add(this.panel1);
+            this.guna2Panel1.Controls.Add(this.guna2Panel2);
+            this.guna2Panel1.Controls.Add(this.panelTitle);
+            this.guna2Panel1.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.guna2Panel1.Location = new System.Drawing.Point(27, 47);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(1060, 510);
+            this.guna2Panel1.TabIndex = 17;
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.tableLayoutPanel1);
@@ -426,42 +425,32 @@
             this.flpLogs.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.flpLogs.AutoScroll = true;
             this.flpLogs.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.flpLogs.Controls.Add(this.guna2Panel7);
             this.flpLogs.Location = new System.Drawing.Point(3, 3);
             this.flpLogs.Name = "flpLogs";
             this.flpLogs.Size = new System.Drawing.Size(472, 425);
             this.flpLogs.TabIndex = 0;
             // 
-            // guna2Panel7
+            // panelTitle
             // 
-            this.guna2Panel7.BorderRadius = 15;
-            this.guna2Panel7.Controls.Add(this.label5);
-            this.guna2Panel7.Controls.Add(this.label4);
-            this.guna2Panel7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(123)))), ((int)(((byte)(47)))));
-            this.guna2Panel7.Location = new System.Drawing.Point(3, 3);
-            this.guna2Panel7.Name = "guna2Panel7";
-            this.guna2Panel7.Size = new System.Drawing.Size(465, 86);
-            this.guna2Panel7.TabIndex = 0;
+            this.panelTitle.BorderRadius = 10;
+            this.panelTitle.Controls.Add(this.label7);
+            this.panelTitle.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(123)))), ((int)(((byte)(47)))));
+            this.panelTitle.Location = new System.Drawing.Point(550, 26);
+            this.panelTitle.Name = "panelTitle";
+            this.panelTitle.Size = new System.Drawing.Size(203, 38);
+            this.panelTitle.TabIndex = 21;
             // 
-            // label4
+            // label7
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(38, 19);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(131, 23);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "label4fdsfdsfdfdsff";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(38, 46);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(380, 23);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "label5sssdasdasdasdsadsadsadsaddasdasdasdasdas";
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(35, 4);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(134, 25);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "Activity Logs";
             // 
             // profile
             // 
@@ -473,7 +462,6 @@
             this.Name = "profile";
             this.Size = new System.Drawing.Size(1102, 575);
             this.Load += new System.EventHandler(this.profile_Load);
-            this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbProfilepic)).EndInit();
@@ -491,12 +479,12 @@
             this.guna2Panel5.ResumeLayout(false);
             this.guna2Panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.guna2Panel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.flpLogs.ResumeLayout(false);
-            this.guna2Panel7.ResumeLayout(false);
-            this.guna2Panel7.PerformLayout();
+            this.panelTitle.ResumeLayout(false);
+            this.panelTitle.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -531,8 +519,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.FlowLayoutPanel flpLogs;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2Panel panelTitle;
+        private System.Windows.Forms.Label label7;
     }
 }
